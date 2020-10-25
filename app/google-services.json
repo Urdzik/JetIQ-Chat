@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "987027148924",
+    "firebase_url": "https://jetiq-chat.firebaseio.com",
+    "project_id": "jetiq-chat",
+    "storage_bucket": "jetiq-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987027148924:android:c73bbbc7b94178b5d2f9f9",
+        "android_client_info": {
+          "package_name": "com.example.jetiq_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987027148924-hrd521adr56rq26d3kcv0f6jkgojv3bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD52S5ofi8F8VIWub3K-yS_26JKUo-UGYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987027148924-hrd521adr56rq26d3kcv0f6jkgojv3bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987027148924:android:07454e9eb0dfa4d1d2f9f9",
+        "android_client_info": {
+          "package_name": "com.foxhole.chatappmvvmdagger2rxjavafirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987027148924-hrd521adr56rq26d3kcv0f6jkgojv3bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD52S5ofi8F8VIWub3K-yS_26JKUo-UGYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987027148924-hrd521adr56rq26d3kcv0f6jkgojv3bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

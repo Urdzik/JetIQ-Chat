@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JetIQ-Chat</string>
+    <string name="login">Login</string>
+    <string name="error_not_found_user">E-mail is not registered</string>
+    <string name="error_wrong_password">Wrong password</string>
+    <string name="error_this_field_required">This field is required</string>
+    <string name="error_invalid_email">Invalid email</string>
+    <string name="error_email_already_use">E-mail is already registered</string>
+    <string name="error_password_length" translatable="false">Should contains 8 symbols</string>
+    <string name="error_password_do_not_match" translatable="false">Password should match</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+</resources>
