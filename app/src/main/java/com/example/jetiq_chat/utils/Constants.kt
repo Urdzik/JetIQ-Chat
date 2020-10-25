@@ -1,5 +1,8 @@
 package com.example.jetiq_chat.utils
 
+import androidx.datastore.preferences.preferencesKey
+import com.example.jetiq_chat.model.UserEntry
+
 object Constants {
 
     const val ERROR_NETWORK = "ERROR_NETWORK"
@@ -8,5 +11,7 @@ object Constants {
     const val ERROR_ALREADY_USE = "ERROR_EMAIL_ALREADY_IN_USE"
     const val ERROR_FACEBOOK = "ERROR_FACEBOOK"
     const val ERROR_RESET_PASSWORD = "ERROR_RESET_PASSWORD"
+
+    val KEY_DATA = preferencesKey<String>("user")
 
 }

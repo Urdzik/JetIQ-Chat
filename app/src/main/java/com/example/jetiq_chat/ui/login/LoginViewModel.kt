@@ -5,11 +5,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.jetiq_chat.R
 import com.example.jetiq_chat.model.UserEntry
 import com.example.jetiq_chat.repository.auth.AuthRepository
-import com.example.jetiq_chat.utils.Callback
 import com.example.jetiq_chat.repository.validation.ValidationService
+import com.example.jetiq_chat.utils.Callback
 import com.example.jetiq_chat.utils.Constants
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -23,13 +22,18 @@ class LoginViewModel @ViewModelInject constructor(
     val error: LiveData<Exception>
         get() = _error
 
+    private val _user = MutableLiveData<UserEntry>()
+    val user: LiveData<UserEntry> get() = _user
+
+
+
     fun login(email: String, pass: String) {
         try {
             if (validationService.validateEmail(email) && validationService.validateLoginPassword(pass)) {
                 viewModelScope.launch(Dispatchers.IO) {
-                    authRepository.signIn(email, pass, object : Callback<UserEntry>{
+                    authRepository.signIn(email, pass, object : Callback<UserEntry> {
                         override fun onSuccess(body: UserEntry) {
-
+                            _user.postValue(body)
                         }
 
                         override fun onError(reason: String?) {
@@ -68,7 +72,7 @@ class LoginViewModel @ViewModelInject constructor(
         viewModelScope.launch(Dispatchers.IO) {
             authRepository.signUp(emailStr, pass, object : Callback<UserEntry> {
                 override fun onSuccess(body: UserEntry) {
-
+                    _user.postValue(body)
                 }
 
                 override fun onError(reason: String?) {

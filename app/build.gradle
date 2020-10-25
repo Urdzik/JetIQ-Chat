@@ -95,4 +95,7 @@ dependencies {
 
     // Apache validator
     implementation 'commons-validator:commons-validator:1.6'
+
+    // Preferences DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha02"
 }
